@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade%7CEwert%7CExpletus+Sans%7CMiss+Fajardose%7CRye%7CStardos+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon-16x16.png" type="images/favico-16x16">
+    <title>okotoks pizza</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="index.html"><img src="images/okotoks-pizza-logo.png" alt="logo" ></a>
+        <div class="myHeader">
+          <ul>
+            <li>
+              <a href="Menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <a href="map.html">5873355755</a>
+            </li>
+            <li>
+              <button class="button white-button" type="button" onclick="window.location.href='tel:+5873355755'">Call Now</button>
+           </li>
+          </ul>
+       </div>
+   </div>
+  <div class="clearfix"></div>
+    <h1>Order Online</h1>
+			<div class="former">
+			  <form action="/map.html">
+			    <label for="Address">Address</label>
+			    <input type="text" id="Address" name="Address" placeholder="Address..">
+			    <input type="submit" value="Submit">
+			  </form>
+			</div>
+    <br/><br/>
+    <div id="video-div">
+      <h3>
+           You feel good about ordering it.<br/>
+           You feel good about eating it.<br/>
+           And you feel even better knowing we're always ready to make you more.
+      </h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1542988140397!6m8!1m7!1sy-TmhQMVLeTJB_5F2sRKUg!2m2!1d53.54037702685876!2d-113.4932302043552!3f228.5934112289655!4f0!5f0.7820865974627469"
+      style="border:0" allowfullscreen></iframe>
+      <iframe src="okotokspizza.mp4" style="border:0" allowfullscreen></iframe>
+    </div>
+         <footer id="footer">
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <br/>
+                  &copy;Okotoks Pizza.com
+          </footer>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+ }
+}
+</script>
+  </body>
+</html>

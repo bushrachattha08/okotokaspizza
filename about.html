@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade%7CEwert%7CExpletus+Sans%7CMiss+Fajardose%7CRye%7CStardos+Stencil" rel="stylesheet">
+      <link rel="icon" href="images/favicon-16x16.png" type="images/favico-16x16">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>okotoks pizza</title>
+  </head>
+<body>
+     <div id="navbar">
+        <a href="index.html"><img src="images/okotoks-pizza-logo.png" alt="logo"></a>
+           <div class="myHeader">
+                <ul>
+                    <li>
+                        <a href="Menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="map.html">5873355755</a>
+                    </li>
+                    <li>
+                      <button class="button white-button" type="button" onclick="window.location.href='tel:+5873355755'">Call Now</button>
+                   </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+       </div>
+       <br/>
+           <h1>About Us</h1>
+                <div id="family-div">
+                  <p>
+                    We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta.
+                    When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients,
+                    we’re crafting perfect pizzas for you and your family to enjoy.
+                    From hot Hawaiians and classic Canadians to crispy wings and decadent fudge brownies,
+                    everything at Okotoks Pizza is baked with love.
+                  </p>
+                  <p>
+                    After watching his parents run a very successful pizza business in Calgary,
+                    Matt Cleveland learned how to make people happy, one topping at a time.
+                    Opening the doors to Okotoks Pizza in 2004, Matt has managed to evolve the fresh,
+                    traditional Greek-style pizza his family perfected back in the mid 80s to a more modern
+                    and convenient comfort food for today’s family on the go.
+                  </p>
+                  <img src="images/3.jpg" alt="okotoksfamily" >
+                  <img src="images/2.jpg" alt="okotoksfamily">
+                  <img src="images/6.jpg" alt="okotoksfamily">
+                  <img src="images/7.jpg" alt="okotoksfamily">
+                  <img src="images/1.jpg" alt="okotoksfamily">
+                  <img src="images/5.jpg" alt="okotoksfamily">
+              </div>
+    <br/>
+<footer id="footer">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <br/>
+  &copy;Okotoks Pizza.com
+</footer>
+<script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+    } else {
+navbar.classList.remove("sticky");
+    }
+  }
+</script>
+</body>
+</html>

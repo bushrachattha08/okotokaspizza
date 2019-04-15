@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade%7CEwert%7CExpletus+Sans%7CMiss+Fajardose%7CRye%7CStardos+Stencil" rel="stylesheet">
+
+      <link rel="icon" href="images/favicon-16x16.png" type="images/favico-16x16">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>okotoks pizza</title>
+  </head>
+  <body>
+  <div id="navbar">
+    <a href="index.html"><img src="images/okotoks-pizza-logo.png" alt="logo"></a>
+     <div class="myHeader">
+       <ul>
+         <li>
+           <a href="Menu.html">Menu</a>
+         </li>
+         <li>
+           <a href="about.html">About Us</a>
+         </li>
+         <li>
+           <a href="map.html">5873355755</a>
+         </li>
+         <li>
+           <button class="button white-button" type="button" onclick="window.location.href='tel:+5873355755'">Call Now</button>
+        </li>     
+       </ul>
+     </div>
+     <div class="clearfix"></div>
+  </div>
+  <br/>
+  <h1>map</h1>
+  <div id="video-div">
+    <h3>You feel good about ordering it.<br/>
+        You feel good about eating it.<br/>
+        And you feel even better knowing we're always ready to make you more.</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1542988140397!6m8!1m7!1sy-TmhQMVLeTJB_5F2sRKUg!2m2!1d53.54037702685876!2d-113.4932302043552!3f228.5934112289655!4f0!5f0.7820865974627469"
+    style="border:0" allowfullscreen></iframe>
+    <iframe src="okotokspizza.mp4" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id="family-div">
+      <p>
+        We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta.
+        When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients,
+        we’re crafting perfect pizzas for you and your family to enjoy.
+        From hot Hawaiians and classic Canadians to crispy wings and decadent fudge brownies,
+        everything at Okotoks Pizza is baked with love.
+      </p>
+    </div>
+      <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides w3-animate-fading" src="images/1.jpg" style="width:100%" alt="photo">
+          <img class="mySlides w3-animate-fading" src="images/5.jpg" style="width:100%" alt="photo">
+          <img class="mySlides w3-animate-fading" src="images/7.jpg" style="width:100%" alt="photo">
+      </div>
+      <br/>
+      <footer id="footer">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <br/>
+        &copy;Okotoks Pizza.com
+      </footer>
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 9000);
+      }
+      </script>
+  </body>
+
+</html>
